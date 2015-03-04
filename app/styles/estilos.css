@@ -1,0 +1,118 @@
+/* 
+Documento CSS  
+DIW - Los enlaces
+David Abril
+*/
+
+/*
+Paleta de colores:
+Color base seleccionado en funcion del color rojo del monumento a los enlaces:
+(Rojo exadecimal E04042 modificado en paletton automaticamente a E04040)
+Paleta elegida en paletton.com:
+http://paletton.com/#uid=1000u0kmSs7dqFyiHvurcopu6jr
+*/
+
+/*Aplicable a toda la pagina*/
+* {
+	margin:0px;
+	padding:0px;
+}
+/*Aplicable al cuerpo*/
+body{
+	font-family:Segoe,sans-serif;
+	font-size:16px;
+}
+/*Aplicable a la etiqueta que guardara la imagen del banner*/
+figure{
+	display:inline-block;
+	margin:1% 1% 0% -4%;
+	text-align:left;		
+}
+/*Aplicable al texto de la imagen del banner*/
+figcaption{
+	font-family: Constantia,serif;
+	margin-left: 35%;
+	text-align: left;
+}
+/*Aplicable al banner*/
+h1{
+	color:#9B0909;
+	display:inline-block;
+	font-size:72px;
+	margin:0.25em auto;
+	text-align:center;
+	text-shadow:15px 15px 20px rgba(255,255,255,0.9);
+	width:75%;	
+}
+/*Aplicable a las etiquetas html5 header, nav y footer*/
+header,nav,footer{
+	background:lightblue;
+	border-radius:0.5em;
+	margin:0.5em;
+	padding:0.25em;
+	text-align:center;
+}
+/*Aplicable a la id contenedor dentro de la etiqueta html5 section*/
+/*NOTA: Segun el navegador a veces no coge directamente si modificamos section*/
+section#contenedor{
+	background:lightblue;
+	margin:0.5em auto;
+	padding:0px;
+	text-align:center;
+	width: 65%;
+	border-radius:0.5em;
+	float:left;
+}
+/*Aplicable a la id principal dentro de la etiqueta html5 section y aside*/
+/*NOTA: Segun el navegador a veces no coge directamente si modificamos section*/
+section#principal, aside{
+	background:#FFFFFF;	
+	border-radius:0.5em;
+	display:inline-block;
+	margin:5px;
+	min-height:100px;
+	padding:0.25em;
+	text-align:center;
+	vertical-align:top;
+	width:65%;
+}
+/*Aplicable a la etiqueta H2*/
+h2{
+	color:#C21D1D;
+}
+/*Aplicable a la etiqueta H3*/
+h3{
+	color:#FA5F5F;
+	text-decoration:underline;
+}
+/*Aplicable a la etiqueta parrafo*/
+p{
+	text-indent:5px;
+}
+/*Aplicable a la etiqueta article de html5*/
+article{
+	text-align:left;
+}
+/*Aplicable a la etiqueta aside de html5*/
+aside{
+	width:30%;	
+}
+/*Aplicable a la etiqueta footer de html5*/
+footer{
+	clear:both;
+	font-size:1.05em;
+}
+nav{
+	float:left;
+	width: 30%;
+}
+nav aside{
+	width: 80%;
+}
+
+.menu{margin:0; padding:0; width:100%; list-style:none;background:rgb(255,255,255);}
+.menu li{padding:0; margin:0 0 1px 0; height:40px; display:block; }
+.menu li a{text-align:left;height:40px; padding:0px 25px; font:16px Verdana, Arial, Helvetica, sans-serif; color:rgb(255,255,255); display:block; background:url('../images/verMenuImages.png') 0px 0px no-repeat; text-decoration:none;}
+.menu li a:hover{background:url('../images/verMenuImages.png') 0px -40px no-repeat; color:rgb(255,255,255);}
+.menu li a.active, .menu li a.active:hover{background:url('../images/verMenuImages.png') 0px -80px no-repeat; color:rgb(255,255,255);}
+.menu li a span{line-height:40px;}
