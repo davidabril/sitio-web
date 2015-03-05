@@ -6,14 +6,16 @@ David Abril
 
 /*
 Paleta de colores:
-Color base seleccionado en funcion del color rojo del monumento a los enlaces:
-(Rojo exadecimal E04042 modificado en paletton automaticamente a E04040)
+Color base seleccionado en funcion del logo de la empresa:
+(Color azul  1A82C5)
 Paleta elegida en paletton.com:
-http://paletton.com/#uid=1000u0kmSs7dqFyiHvurcopu6jr
+http://paletton.com/#uid=13v0u0ktxGP4WPXf3w6XOIKTWnc
 */
 
+/*Estilos por orden de aparicion en la pagina web*/
 /*Aplicable a toda la pagina*/
 * {
+	font-family: 'Alef', sans-serif;
 	margin:0px;
 	padding:0px;
 }
@@ -24,29 +26,48 @@ body{
 }
 /*Aplicable a la etiqueta que guardara la imagen del banner*/
 figure{
-	display:inline-block;
+	/*
 	margin:1% 1% 0% -4%;
-	text-align:left;		
+	max-width:100%;*/
+	display:inline-block;
+	width:20%;
+	vertical-align:middle;		
+}
+figure img{
+	/*display:block; */
+	display:inline-block;
+	width:20%; 
+	margin:15% 5% 5% 5%;
 }
 /*Aplicable al texto de la imagen del banner*/
 figcaption{
-	font-family: Constantia,serif;
-	margin-left: 35%;
-	text-align: left;
+	/*display:block;	
+	margin-left: 15%;
+	width:20%; 	
+	text-align: center;*/
+	margin:0px 5% 5% 5%;
 }
 /*Aplicable al banner*/
-h1{
-	color:#9B0909;
+section#banner{
 	display:inline-block;
-	font-size:72px;
+	margin:5px;
+	min-height:100px;
+	padding:0.25em;
+	text-align:center;
+	vertical-align:top;
+	width:65%;
+}
+h1{
+	display:inline-block;
+	font-size:4em;
 	margin:0.25em auto;
 	text-align:center;
-	text-shadow:15px 15px 20px rgba(255,255,255,0.9);
+	text-shadow:15px 15px 20px rgba(191, 211, 223,0.9);
 	width:75%;	
 }
 /*Aplicable a las etiquetas html5 header, nav y footer*/
 header,nav,footer{
-	background:lightblue;
+	background:#1A82C5;
 	border-radius:0.5em;
 	margin:0.5em;
 	padding:0.25em;
@@ -55,7 +76,7 @@ header,nav,footer{
 /*Aplicable a la id contenedor dentro de la etiqueta html5 section*/
 /*NOTA: Segun el navegador a veces no coge directamente si modificamos section*/
 section#contenedor{
-	background:lightblue;
+	background:#017CCB;
 	margin:0.5em auto;
 	padding:0px;
 	text-align:center;
@@ -66,7 +87,7 @@ section#contenedor{
 /*Aplicable a la id principal dentro de la etiqueta html5 section y aside*/
 /*NOTA: Segun el navegador a veces no coge directamente si modificamos section*/
 section#principal, aside{
-	background:#FFFFFF;	
+	background:#BFD3DF;	
 	border-radius:0.5em;
 	display:inline-block;
 	margin:5px;
@@ -77,7 +98,7 @@ section#principal, aside{
 	width:65%;
 }
 /*Aplicable a la etiqueta H2*/
-h2{
+section#principal h2{
 	color:#C21D1D;
 }
 /*Aplicable a la etiqueta H3*/
@@ -108,11 +129,81 @@ nav{
 }
 nav aside{
 	width: 80%;
+		background:#1A82C5;
 }
-
+/*
 .menu{margin:0; padding:0; width:100%; list-style:none;background:rgb(255,255,255);}
 .menu li{padding:0; margin:0 0 1px 0; height:40px; display:block; }
-.menu li a{text-align:left;height:40px; padding:0px 25px; font:16px Verdana, Arial, Helvetica, sans-serif; color:rgb(255,255,255); display:block; background:url('../images/verMenuImages.png') 0px 0px no-repeat; text-decoration:none;}
-.menu li a:hover{background:url('../images/verMenuImages.png') 0px -40px no-repeat; color:rgb(255,255,255);}
-.menu li a.active, .menu li a.active:hover{background:url('../images/verMenuImages.png') 0px -80px no-repeat; color:rgb(255,255,255);}
+.menu li a{text-align:left;height:40px; padding:0px 25px; font:16px Verdana, Arial, Helvetica, sans-serif; color:rgb(255,255,255); display:block; background:url('../images/menu.png') 0px 0px no-repeat; text-decoration:none;}
+.menu li a:hover{background:url('../images/menu.png') 0px -40px no-repeat; color:rgb(255,255,255);}
+.menu li a.active, .menu li a.active:hover{background:url('../images/menu.png') 0px -80px no-repeat; color:rgb(255,255,255);}
 .menu li a span{line-height:40px;}
+*/
+
+.menu{
+	margin:0; 
+	padding:0; 
+	width:100%; 
+	list-style:none;
+}
+.menu li{
+	padding:0; 
+	margin:0 0 1px 0; 
+	display:block; 
+}
+.menu li a{
+	text-align:left;
+	padding:0px 25px; 
+	font:16px Verdana, Arial, Helvetica, sans-serif; 
+	color:rgb(255,255,255); 
+	display:block; 
+	background:url('../images/menu.png') 0px 0px no-repeat; 
+	text-decoration:none;
+}
+.menu li a:hover{
+	background:url('../images/menu.png') 0px -40px no-repeat; 
+	color:rgb(252,252,252);
+}
+.menu li a.active, .menu li a.active:hover{
+	background:url('../images/menu.png') 0px -80px no-repeat; 
+	color:rgb(255,255,255);
+}
+.menu li a span{
+	line-height:40px;
+}
+
+video { 
+	width: 80%; 
+}
+video source {
+	width: 100%; 
+	height: auto; 
+}
+
+footer ul{
+	list-style:none;
+}
+footer li{
+	margin-top: 0.5%;
+	display: inline-block;
+    width: 38px;
+    height: 38px;
+}
+#facebook {
+    background: url('../images/social.jpg') -82px 0;/*Primero izq segundo fila*/
+}
+#twitter {
+    background: url('../images/social.jpg') -124px 0;
+}
+#youtube {
+    background: url('../images/social.jpg') -246px 0;
+}
+#linkedin {
+    background: url('../images/social.jpg') -328px 0;
+}
+#google {
+    background: url('../images/social.jpg') 0 -111px;
+}
+#pinterest {
+    background: url('../images/social.jpg') -205px -74px;
+}
