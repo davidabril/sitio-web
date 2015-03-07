@@ -14,6 +14,22 @@ http://paletton.com/#uid=13v0u0ktxGP4WPXf3w6XOIKTWnc
 
 /*Estilos por orden de aparicion en la pagina web*/
 /*Aplicable a toda la pagina*/
+
+@media screen and (max-width: 600px) {
+	#cambio{
+		display: none;
+	}
+	iframe{
+		display: none;
+	}
+	.gallery{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 900px) {
+
+}
 * {
 	font-family: 'Alef', sans-serif;
 	margin:0px;
