@@ -1,0 +1,297 @@
+//Paleta
+//http://paletton.com/palette.php?uid=13T0u0kwi%2B%2Bbu%2B%2BhX%2B%2B%2B%2Brd%2B%2BkX
+
+//Color Palette Preview
+//Palette UID: 13T0u0kwi++bu++hX++++rd++kX
+
+
+// Core variables and mixins
+@import "bower_components/bootstrap/less/variables.less";
+@import "variables.less";
+@import "bower_components/bootstrap/less/mixins.less";
+
+// Reset and dependencies
+@import "bower_components/bootstrap/less/normalize.less";
+@import "bower_components/bootstrap/less/print.less";
+@import "bower_components/bootstrap/less/glyphicons.less";
+
+// Core CSS
+@import "bower_components/bootstrap/less/scaffolding.less";
+@import "bower_components/bootstrap/less/type.less";
+@import "bower_components/bootstrap/less/code.less";
+@import "bower_components/bootstrap/less/grid.less";
+@import "bower_components/bootstrap/less/tables.less";
+@import "bower_components/bootstrap/less/forms.less";
+@import "bower_components/bootstrap/less/buttons.less";
+
+// Components
+@import "bower_components/bootstrap/less/component-animations.less";
+@import "bower_components/bootstrap/less/dropdowns.less";
+@import "bower_components/bootstrap/less/button-groups.less";
+@import "bower_components/bootstrap/less/input-groups.less";
+@import "bower_components/bootstrap/less/navs.less";
+@import "bower_components/bootstrap/less/navbar.less";
+@import "bower_components/bootstrap/less/breadcrumbs.less";
+@import "bower_components/bootstrap/less/pagination.less";
+@import "bower_components/bootstrap/less/pager.less";
+@import "bower_components/bootstrap/less/labels.less";
+@import "bower_components/bootstrap/less/badges.less";
+@import "bower_components/bootstrap/less/jumbotron.less";
+@import "bower_components/bootstrap/less/thumbnails.less";
+@import "bower_components/bootstrap/less/alerts.less";
+@import "bower_components/bootstrap/less/progress-bars.less";
+@import "bower_components/bootstrap/less/media.less";
+@import "bower_components/bootstrap/less/list-group.less";
+@import "bower_components/bootstrap/less/panels.less";
+@import "bower_components/bootstrap/less/responsive-embed.less";
+@import "bower_components/bootstrap/less/wells.less";
+@import "bower_components/bootstrap/less/close.less";
+
+// Components w/ JavaScript
+@import "bower_components/bootstrap/less/modals.less";
+@import "bower_components/bootstrap/less/tooltip.less";
+@import "bower_components/bootstrap/less/popovers.less";
+@import "bower_components/bootstrap/less/carousel.less";
+
+// Utility classes
+@import "bower_components/bootstrap/less/utilities.less";
+@import "bower_components/bootstrap/less/responsive-utilities.less";
+
+// 
+
+/* ---------------------------------------------------------------------------------------------
+                Add CSS Customizations to your theme here. - MIS ESTILOS
+------------------------------------------------------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.container{
+  width: 90%;
+}
+.container-full{
+  margin: 0 auto;
+  width: 100%;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+#carousel2{
+  margin: 0 15% 5% 15%;
+}
+.arriba{margin-top:6%;}
+header{
+  padding-top: 1%;
+  background: @body-bg;
+  max-height: 125px;
+  h1{
+    font-family: @alef;
+    color: @n;
+    display:inline-block;
+    font-size: @font-size-base*3;
+    margin:0.25em auto;
+    text-align: center;
+    text-shadow:10px 10px 15px lighten(@a1, 25%);
+    width:100%; 
+  }
+  #logo{
+    max-width:50%;
+  }
+}
+
+body {
+  margin-bottom: 60px;
+
+  .active{
+    background-color: @n;
+    color: white;
+  }h2{
+    padding: 0% 5% 0% 5%;
+    background-color: @v0;
+    border-radius: @border-radius-base;
+  }
+  img{
+    width: 100%;
+  }
+  .galeria{
+    height: 300px;
+    width: 510px;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+  /*Mapa situacion google*/
+  .google-maps {
+    position: relative;
+    padding-bottom: 30%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }    
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  } 
+
+    /*Formulario presupuesto*/
+    #presupuesto{  
+      input[type='text'], input[type='email'], select, textarea{
+        background: @navbar-inverse-bg;
+        border: 2px solid @a4;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 5px;
+        padding: 2px;
+        display: block;
+        margin: 5px 0px;
+        width: 100%;
+        color: @a4;
+        &:hover{
+          background: @v0;
+          color: @b;
+        }
+      }  
+      *[type='submit']{
+        background: @a1;
+        border: 2px solid @a4;
+        border-radius: 5px;
+        color: @a4;
+        font-weight: bold;
+        padding-right: 5%;
+        padding-left: 5%;
+        &:hover{
+            background: @a4;
+            color: @b;
+          }
+      }
+      .important{ 
+        color:red; 
+        font-weight:bold; 
+      }
+    }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: @gray-dark;
+  background-color: @a1;
+  p{
+    font-size: @font-size-base*0.8; 
+  }
+  ul{
+    padding: 0px;
+    display: inline;
+    margin: 0;
+    list-style: none;
+    /*margin-top: 0%;
+    margin-top: 0%;*/
+  }
+  li{
+    display: inline-block;
+    width: 38px;
+    height: 38px;    
+  }
+  /*Iconos para redes sociales*/
+  span {
+    display: block;  
+    width:38px; 
+    height:38px;
+  }
+  #facebook{
+    background:url('../images/iconos.png') -82px 0;
+    &:hover{
+      background:url('../images/iconos.png') -82px -183px;
+    }
+  }
+  #pinterest{
+    background:url('../images/iconos.png') -205px -73px;
+    &:hover{
+      background:url('../images/iconos.png') -205px -256px;
+    }
+  }
+  #googlemas{
+    background:url('../images/iconos.png') 0 -111px;
+    &:hover{
+      background:url('../images/iconos.png') 0 -294px;
+    }
+  }
+  #google{
+    background:url('../images/iconos.png') -368px -110px;;
+    &:hover{
+      background:url('../images/iconos.png') -368px -293px;
+    }
+  }
+  #yahoo{
+    background:url('../images/iconos.png') -287px -110px;
+    &:hover{
+      background:url('../images/iconos.png') -287px -293px;
+    }
+  }
+  #foursquare{
+    background:url('../images/iconos.png') -369px -148px;
+    &:hover{
+      background:url('../images/iconos.png') -369px -331px;
+    }
+  }
+  #youtube{
+    background:url('../images/iconos.png') -246px 0;
+    &:hover{
+      background:url('../images/iconos.png') -246px -183px;
+    }
+  }
+}
+    /*#finRS{
+        margin-right: 10%;
+    }*/
+          /*#facebook {
+            background: url('../images/iconos.png') -82px 0;
+            &:hover{
+              background: url('../images/iconos.png') -82px -183px;
+            }
+          }
+          #googlemas {
+            background: url('../images/iconos.png') 0 -111px;
+            &:hover{
+              background: url('../images/iconos.png') 0 -294px;
+          }
+    #pinterest {
+    background: url('../images/iconos.png') -205px -72px;
+     &:hover{
+        background: url('../images/iconos.png') -205 -256px;
+      }
+    }
+      #foursquare{
+          background: url('../images/iconos.png') -369px -148px;
+      }
+#youtube {
+    background: url('../images/iconos.png') -82px 0;
+}
+
+          #yahoo{
+              background: url('../images/iconos.png') -287px -110px;
+          }
+          #google{
+              background: url('../images/iconos.png') -368px -110px;
+          }
+#pinterest:hover, #facebook:hover, #foursquare:hover,#youtube:hover,#googlemas:hover,#google:hover,#yahoo:hover{
+  background: url('../images/iconos.png') 0 0;  
+}*/
+
+#videoreforma{
+  border:none;
+}
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  .quit{
+      display: none;
+  }
+}
